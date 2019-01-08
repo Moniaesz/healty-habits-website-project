@@ -60,6 +60,9 @@ $lightViolet: #E0DEFD;
 $darkViolet: #6C63FF;
 $darkestViolet: #342D9C;
 
+$boxShadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+$borderRadius: 10px;
+
 body {
 	font-family: Lato, sans-serif;
 	background: $darkBlue;
@@ -76,7 +79,10 @@ h2 {
 
 h3 {
 	font-size: 1.9rem;
+}
 
+p {
+	font-size: 1.1rem;
 }
 
 h1, h2, h3, h4, h5, p, li, button {
@@ -95,4 +101,78 @@ h1, h2, h3, h4, h5, p, li, button {
 
 img {
 	height: 200px;
+}
+
+/*
+* === hero section ===
+*/
+.hero, .header {
+	background: $darkBlue;
+}
+
+/*
+* === advices section ===
+*/
+#advices {
+	background: white;
+}
+
+.advices__tiles {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	width: 100%;
+}
+.advice__tile {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	padding: 2rem;
+	margin-bottom: 2rem;
+	box-shadow: $boxShadow;
+}
+.advice__tile__first {
+	background: $turqGreen;
+}
+.advice__tile__second {
+	background: $lightViolet;
+	h3, p {
+		color: $darkBlue;
+	}
+}
+.advice__tile__third {
+	background: $darkViolet;
+}
+.advice__title {
+	margin: 1.3rem auto;
+}
+
+
+/*
+* === reviews section ===
+*/
+.review__img {
+	width: 100px;
+	height: 100px;
+}
+
+/*
+* === MEDIA QUERIES ===
+*/
+@media screen and (min-width: 1187px) {
+	.advices__tiles {
+		flex-direction: row;
+		max-width: 1300px;
+		margin: 0 auto;
+		align-items: center;
+	}
+	.advice__tile__first, .advice__tile__third {
+		width: 30%;
+		height: 30rem;
+	}
+	.advice__tile__second {
+		width: 40%;
+		height: 35rem;
+	}
 }

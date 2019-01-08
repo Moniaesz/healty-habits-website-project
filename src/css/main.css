@@ -64,6 +64,9 @@ h2 {
 h3 {
   font-size: 1.9rem; }
 
+p {
+  font-size: 1.1rem; }
+
 h1, h2, h3, h4, h5, p, li, button {
   color: white; }
 
@@ -78,3 +81,67 @@ h1, h2, h3, h4, h5, p, li, button {
 
 img {
   height: 200px; }
+
+/*
+* === hero section ===
+*/
+.hero, .header {
+  background: #191741; }
+
+/*
+* === advices section ===
+*/
+#advices {
+  background: white; }
+
+.advices__tiles {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%; }
+
+.advice__tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+
+.advice__tile__first {
+  background: #0FBDA3; }
+
+.advice__tile__second {
+  background: #E0DEFD; }
+  .advice__tile__second h3, .advice__tile__second p {
+    color: #191741; }
+
+.advice__tile__third {
+  background: #6C63FF; }
+
+.advice__title {
+  margin: 1.3rem auto; }
+
+/*
+* === reviews section ===
+*/
+.review__img {
+  width: 100px;
+  height: 100px; }
+
+/*
+* === MEDIA QUERIES ===
+*/
+@media screen and (min-width: 1187px) {
+  .advices__tiles {
+    flex-direction: row;
+    max-width: 1300px;
+    margin: 0 auto;
+    align-items: center; }
+  .advice__tile__first, .advice__tile__third {
+    width: 30%;
+    height: 30rem; }
+  .advice__tile__second {
+    width: 40%;
+    height: 35rem; } }
