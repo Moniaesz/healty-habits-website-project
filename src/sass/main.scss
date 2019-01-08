@@ -81,6 +81,10 @@ h3 {
 	font-size: 1.9rem;
 }
 
+h4 {
+	font-size: 1.2rem;
+}
+
 p {
 	font-size: 1.1rem;
 }
@@ -158,9 +162,35 @@ img {
 }
 
 /*
+* === stats section ===
+*/
+#stats {
+	background: $darkViolet;
+	text-align: center;
+	padding: 0.5rem 2rem 3rem 2rem;
+	display: flex;
+	justify-content: center;
+}
+.stats__tiles {
+	display: grid;
+	max-width: 1600px;
+	margin: 0 auto;
+}
+.stats__img {
+	height: 80px;
+	margin-top: 3.3rem;
+}
+.stats__title {
+	margin: 1rem;
+	font-size: 2.8rem;
+	font-weight: bold;
+}
+
+/*
 * === MEDIA QUERIES ===
 */
 @media screen and (min-width: 1187px) {
+//advices
 	.advices__tiles {
 		flex-direction: row;
 		max-width: 1300px;
@@ -174,5 +204,12 @@ img {
 	.advice__tile__second {
 		width: 40%;
 		height: 35rem;
+	}
+//stats
+	.stats__tiles {
+		grid-template-columns: repeat(5, 1fr);
+	}
+	.stats__tile {
+		margin: auto 2rem;
 	}
 }

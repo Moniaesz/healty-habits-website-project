@@ -8,7 +8,10 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
 	<script src="./js/app.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
 </head>
+
 <body class="page">
 
 <!-- header -->
@@ -138,30 +141,29 @@
 		<section id="stats">
 			<div class="stats__tiles">
 				<div class="stats__tile">
-					<img src="assets/icons/scale.svg" alt="">
-					<h3>30%</h3>
+					<img class="stats__img" src="assets/icons/scale.svg" alt="">
+					<h3 class="stats__title"><span class="count">30</span>%</h3>
 					<h4>of world's population is obese</h4>
 				</div>
 				<div class="stats__tile">
-					<img src="assets/icons/man.svg" alt="">
-					<h3>65</h3>
+					<img class="stats__img" src="assets/icons/man.svg" alt="">
+					<h3 class="stats__title"><span class="count">65</span></h3>
 					<h4>is the average age of men first heart attack</h4>
 				</div>
 				<div class="stats__tile">
-					<img src="assets/icons/woman.svg" alt="">
-					<h3>72</h3>
+					<img class="stats__img" src="assets/icons/woman.svg" alt="">
+					<h3 class="stats__title"><span class="count">72</span></h3>
 					<h4>is the average age of men first heart attack</h4>
 				</div>
 				<div class="stats__tile">
-					<img src="assets/icons/laugh.svg" alt="">
-					<h3>20%</h3>
+					<img class="stats__img" src="assets/icons/laugh.svg" alt="">
+					<h3 class="stats__title" ><span class="count">20</span>%</h3>
 					<h4>increase of blood flow can be done by laughing</h4>
 				</div>
 				<div class="stats__tile">
-					<img src="assets/icons/apple.svg" alt="">
-					<h3>1</h3>
+					<img class="stats__img" src="assets/icons/apple.svg" alt="">
+					<h3 class="stats__title"><span class="count">1</span></h3>
 					<h4>apple a day reduces level of bad cholesterol</h4>
-				</div>
 			</div>
 		</section>
 
@@ -199,6 +201,24 @@
 		<p class="copy"> © Heatlhy Habits</p>
 		<p class="created-by">Created by <span class="turqGreen">Monika Szypowicz</span></p>
 	</footer>
+
+	<script>
+
+		$(window).on('load', function() {
+			$('.count').each(function () {
+				$(this).prop('Counter',0).animate({
+					Counter: $(this).text()
+					}, {
+					duration: 4000,
+					easing: 'swing',
+					step: function (now) {
+						$(this).text(Math.ceil(now));
+					}
+				});
+			});
+		});
+
+	</script>
 
 </body>
 </html>
