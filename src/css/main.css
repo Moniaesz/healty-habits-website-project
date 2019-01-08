@@ -45,7 +45,36 @@ table {
   border-spacing: 0; }
 
 /*
-* === GENERAL STYLES ===
+* === GENERAL CUSTOM STYLES ===
+*/
+/*
+* === COLORS ===
 */
 body {
-  font-family: Lato, sans-serif; }
+  font-family: Lato, sans-serif;
+  background: #191741;
+  font-size: 62.5%; }
+
+h1 {
+  font-size: 1.5rem; }
+
+h2 {
+  font-size: 2.2rem; }
+
+h3 {
+  font-size: 1.9rem; }
+
+h1, h2, h3, h4, h5, p, li, button {
+  color: white; }
+
+.button {
+  background: #0FBDA3;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 2rem;
+  width: 15rem;
+  font-size: 1.3rem;
+  cursor: pointer; }
+
+img {
+  height: 200px; }

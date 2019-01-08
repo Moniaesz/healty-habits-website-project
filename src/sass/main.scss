@@ -46,9 +46,53 @@ table {
 }
 
 /*
-* === GENERAL STYLES ===
+* === GENERAL CUSTOM STYLES ===
 */
+
+/*
+* === COLORS ===
+*/
+$turqGreen: #0FBDA3;
+$darkBlue: #191741;
+$lightPink: #FBBBC4;
+$darkPink: #FC6681;
+$lightViolet: #E0DEFD;
+$darkViolet: #6C63FF;
+$darkestViolet: #342D9C;
 
 body {
 	font-family: Lato, sans-serif;
+	background: $darkBlue;
+	font-size: 62.5%;
+}
+
+h1 {
+	font-size: 1.5rem;
+}
+
+h2 {
+	font-size: 2.2rem;
+}
+
+h3 {
+	font-size: 1.9rem;
+
+}
+
+h1, h2, h3, h4, h5, p, li, button {
+	color: white;
+}
+
+.button {
+	background: $turqGreen;
+	padding: 1rem 2rem;
+	border: none;
+	border-radius: 2rem;
+	width: 15rem;
+	font-size: 1.3rem;
+	cursor: pointer;
+}
+
+img {
+	height: 200px;
 }
