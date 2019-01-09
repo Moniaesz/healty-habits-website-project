@@ -257,23 +257,6 @@ img {
 /*
 * === MEDIA QUERIES ===
 */
-@media screen and (min-width: 1187px) {
-  .advices__tiles {
-    flex-direction: row;
-    max-width: 1300px;
-    margin: 0 auto;
-    align-items: center; }
-  .advice__tile__first, .advice__tile__third {
-    width: 30%;
-    height: 30rem; }
-  .advice__tile__second {
-    width: 40%;
-    height: 35rem; }
-  .stats__tiles {
-    grid-template-columns: repeat(5, 1fr); }
-  .stats__tile {
-    margin: auto 2rem; } }
-
 @media screen and (max-width: 930px) {
   .header {
     align-items: center; }
@@ -292,7 +275,26 @@ img {
     position: absolute;
     width: 100vw; } }
 
+@media screen and (min-width: 1187px) {
+  .advices__tiles {
+    flex-direction: row;
+    max-width: 1300px;
+    margin: 0 auto;
+    align-items: center; }
+  .advice__tile__first, .advice__tile__third {
+    width: 30%;
+    height: 30rem; }
+  .advice__tile__second {
+    width: 40%;
+    height: 35rem; }
+  .stats__tiles {
+    grid-template-columns: repeat(5, 1fr); }
+  .stats__tile {
+    margin: auto 2rem; } }
+
 @media screen and (min-width: 1240px) {
+  .header__logo__img {
+    height: 8rem; }
   .header__logo__name {
     font-size: 2.7rem;
     line-height: 3rem; } }
