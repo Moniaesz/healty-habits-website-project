@@ -15,18 +15,26 @@
 <body class="page">
 
 <!-- header -->
-	<header id="page__header header">
+	<header class="page__header header">
 		<div class="header__logo">
-			<img src="assets/logo.png" alt="">
-			<h1>Healthy Habits</h1>
+			<img class="header__logo__img" src="assets/logo.png" alt="">
+			<h1 class="header__logo__name">Healthy <br> Habits</h1>
+		</div>
+<!-- 		<div class="header__mobile-menu">
+			
+		</div> -->
+		<div class="menu">
+				<span class="line one"></span>
+				<span class="line two"></span>
+				<span class="line three"></span>
 		</div>
 		<nav class="nav">
 			<ul class="nav__list">
-				<li class="nav_list__item">Advices</li>
-				<li class="nav_list__item">Reviews</li>
-				<li class="nav_list__item">Steps</li>
+				<li class="nav_list__item"><a class="nav_list__link" href="#advices">Advices</a></li>
+				<li class="nav_list__item"><a class="nav_list__link" href="#reviews">Reviews</a></li>
+				<li class="nav_list__item"><a class="nav_list__link" href="#steps">Steps</a></li>
+				<li class="nav_list__item"><a class="nav_list__link" href="#page__footer"><button class="button button--nav">Contact us</button></a></li>
 			</ul>
-			<button class="button button--nav">Contact us</button>
 		</nav>
 	</header>
 
@@ -215,6 +223,14 @@
 						$(this).text(Math.ceil(now));
 					}
 				});
+			});
+		});
+
+		$(document).ready(function() {
+			const nav = $('nav');
+			$('.menu').click(function() {
+			$(this).toggleClass("open");
+			$(nav).toggleClass("open");
 			});
 		});
 
