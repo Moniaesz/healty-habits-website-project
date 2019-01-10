@@ -60,12 +60,12 @@ $lightViolet: #E0DEFD;
 $darkViolet: #6C63FF;
 $darkestViolet: #342D9C;
 
-$boxShadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+$boxShadow: 0px 3px 15px rgba(0,0,0,0.2);
 $borderRadius: 10px;
 
 body {
 	font-family: Lato, sans-serif;
-	background: $darkBlue;
+	background: $darkPink;
 	font-size: 62.5%;
 	line-height: 1.6rem;
 }
@@ -258,6 +258,37 @@ img {
 }
 
 /*
+* === steps ===
+*/
+#steps {
+	background: white;
+}
+.steps__tiles {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+.steps__tile {
+	max-width: 65rem;
+	margin: 0 auto;
+	padding: 1.2rem;
+}
+.steps__img {
+	height: 10rem;
+}
+.steps_tile_text {
+	font-weight: 300;
+	h4 {
+		font-size: 1.7rem;
+		color: $turqGreen;
+		font-weight: 400;
+	}
+	p {
+		margin: 1.5rem auto;
+		color: $darkBlue;
+	}
+}
+/*
 * === stats section ===
 */
 #stats {
@@ -381,6 +412,25 @@ img {
 
 
 @media screen and (min-width: 931px) {
+	//steps
+	.steps__tile {
+		display: flex;
+		border: 1px solid #cecece;
+		align-items: center;
+		border-radius: $borderRadius;
+		box-shadow: $boxShadow;
+		margin-top: 2rem;
+	}
+	.steps_tile_text {
+		margin: auto 5rem;
+	}
+	.steps__tile__second {
+		flex-direction: row-reverse;
+	}
+	.steps__img {
+	height: 15rem;
+	}
+	//footer
 	#page__footer {
 		padding: 3rem 1rem;
 	}
