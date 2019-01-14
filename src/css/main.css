@@ -52,24 +52,42 @@ table {
 */
 body {
   font-family: Lato, sans-serif;
-  background: #FC6681;
   font-size: 62.5%;
-  line-height: 1.6rem; }
+  line-height: 1.6rem;
+  background: black;
+  text-align: center; }
 
 h1 {
   font-size: 1.5rem; }
 
 h2 {
-  font-size: 2.2rem; }
+  font-size: 1.4rem; }
 
 h3 {
-  font-size: 1.9rem; }
+  font-size: 1.6rem; }
 
 h4 {
   font-size: 1rem; }
 
 p {
   font-size: 1.1rem; }
+
+.title {
+  padding: 1rem auto; }
+
+.title--white-bg * {
+  color: #191741; }
+
+.title--dark-bg * {
+  color: white; }
+
+.title__h4 {
+  font-size: 2.4rem;
+  opacity: 0.5; }
+
+.title__h3 {
+  font-size: 1.4rem;
+  margin: 1rem auto 1.2rem auto; }
 
 h1, h2, h3, h4, h5, p, li, button {
   color: white; }
@@ -83,6 +101,9 @@ h1, h2, h3, h4, h5, p, li, button {
   font-size: 1.3rem;
   cursor: pointer; }
 
+.button--color {
+  margin-top: 1rem; }
+
 img {
   height: 200px; }
 
@@ -90,6 +111,7 @@ img {
 * === header ===
 */
 .header {
+  background: #191741;
   display: flex;
   justify-content: space-between;
   padding: 1rem 1.5rem;
@@ -173,8 +195,26 @@ img {
 /*
 * === hero section ===
 */
-.hero, .header {
+#hero {
+  padding: 1rem;
+  padding-top: 8rem;
   background: #191741; }
+
+.hero__text > h3 {
+  font-size: 1rem; }
+
+.hero__img {
+  height: 10rem;
+  margin: 1.6rem auto auto 0.5rem; }
+
+.scroll__img {
+  height: 50px;
+  grid-row: 2/3;
+  grid-column: 1/-1;
+  margin-top: 1rem; }
+
+.scroll-field {
+  cursor: pointer; }
 
 /*
 * === advices section ===
@@ -192,7 +232,6 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
   padding: 2rem;
   margin-bottom: 2rem;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2); }
@@ -232,7 +271,6 @@ img {
   background: white; }
 
 .steps__tiles {
-  text-align: center;
   display: flex;
   flex-direction: column; }
 
@@ -259,7 +297,6 @@ img {
 */
 #stats {
   background: #6C63FF;
-  text-align: center;
   padding: 0.5rem 2rem 3rem 2rem;
   display: flex;
   justify-content: center; }
@@ -284,7 +321,8 @@ img {
 #page__footer {
   background: #191741;
   line-height: 1.7rem;
-  padding: 2rem 1rem; }
+  padding: 2rem 1rem;
+  text-align: left; }
 
 .page__footer__inner {
   display: grid;
@@ -362,6 +400,20 @@ img {
     margin-top: 1.7rem; } }
 
 @media screen and (min-width: 931px) {
+  .hero-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto; }
+  .scroll-field {
+    grid-column: 1/-1;
+    align-self: end;
+    margin-top: 8rem; }
+  .scroll__img {
+    height: 4.5rem; }
+  .hero__img {
+    height: 20rem; }
   .steps__tile {
     display: flex;
     border: 1px solid #cecece;
@@ -409,8 +461,15 @@ img {
     margin: auto 2rem; } }
 
 @media screen and (min-width: 1240px) {
+  .title__h4 {
+    font-size: 4.7rem; }
+  .title__h3 {
+    font-size: 2.4rem;
+    margin: 2rem auto 3rem auto; }
   .header__logo__img {
     height: 8rem; }
   .header__logo__name {
     font-size: 2.7rem;
-    line-height: 3rem; } }
+    line-height: 3rem; }
+  #hero {
+    padding-top: 15rem; } }
