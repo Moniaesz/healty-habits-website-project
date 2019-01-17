@@ -129,7 +129,7 @@ img {
 
 .nav {
   display: flex;
-  margin-right: 3rem; }
+  margin-left: 0rem; }
 
 .nav__list {
   background: #191741;
@@ -147,7 +147,7 @@ img {
   color: white; }
 
 .nav.open {
-  margin-top: 2rem; }
+  margin-left: 0; }
 
 .button--nav {
   background: none;
@@ -157,7 +157,7 @@ img {
   width: 60px;
   height: 60px;
   position: relative;
-  margin-right: 3.5rem;
+  margin-right: 5rem;
   display: none; }
 
 .line {
@@ -387,9 +387,10 @@ img {
   .nav {
     position: absolute;
     display: flex;
-    margin-top: -25rem;
+    margin-left: -50rem;
     transition: 0.5s ease-in;
-    padding: 2rem; }
+    padding: 2rem;
+    margin-top: 2rem; }
   .nav__list {
     background: rgba(25, 23, 65, 0.9);
     background: rgba(28, 117, 103, 0.95);
