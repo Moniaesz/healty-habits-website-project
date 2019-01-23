@@ -100,13 +100,12 @@ p {
 .title--dark-bg * {
 	color: white;
 }
-
 .title__h4 {
 	font-size: 2.4rem;
 	opacity: 0.5;
 }
 .title__h3 {
-	font-size: 1.4rem;
+	font-size: 1.2rem;
 	margin: 1rem auto 1.2rem auto;
 }
 
@@ -122,14 +121,15 @@ h1, h2, h3, h4, h5, p, li, button {
 	width: 15rem;
 	font-size: 1.3rem;
 	cursor: pointer;
+	transition: 0.3s ease;
+	&:hover {
+		border: 3px solid white;
+		background: $darkPink;
+	}
 }
 
 .button--color {
 	margin-top: 1rem;
-}
-
-img {
-	height: 200px;
 }
 
 /*
@@ -233,14 +233,15 @@ img {
 	padding-top: 2.5rem
 }
 .hero__text > h3 {
-		font-size: 1rem;
+		font-size: 1.1rem;
+		font-weight: 300;
 }
 .hero__img {
 	height: 10rem;
 	margin: 1.6rem auto auto 0.5rem;
 }
 .scroll__img {
-	height: 50px;
+	height: 2.3rem;
 	grid-row: 2/3;
 	grid-column: 1/-1;
 	margin-top: 1rem;
@@ -256,7 +257,9 @@ img {
 #advices {
 	background: white;
 }
-
+.advice__img {
+	height: 150px;
+}
 .advices__tiles {
 	display: flex;
 	flex-direction: column;
@@ -354,6 +357,9 @@ img {
 	max-width: 65rem;
 	margin: 0 auto;
 	padding: 1.2rem;
+	&:last-child {
+		margin-bottom: 2rem;
+	}
 }
 .steps__img {
 	height: 10rem;
@@ -389,7 +395,7 @@ img {
 	margin-top: 3.3rem;
 }
 .stats__title {
-	margin: 1rem;
+	margin: 1.5rem;
 	font-size: 2.8rem;
 	font-weight: bold;
 }
@@ -509,7 +515,7 @@ img {
 		margin-top: 8rem;
 	}
 	.scroll__img {
-		height: 4.5rem;
+		height: 3.1rem;
 	}
 	.hero__img {
 		height: 20rem;
@@ -529,13 +535,14 @@ img {
 		margin-top: 2rem;
 	}
 	.steps_tile_text {
-		margin: auto 5rem;
+		margin: auto auto auto 5rem;
 	}
 	.steps__tile__second {
 		flex-direction: row-reverse;
 	}
 	.steps__img {
-	height: 15rem;
+		height: 15rem;
+		margin: 1rem 5rem;
 	}
 	//footer
 	#page__footer {
@@ -562,7 +569,15 @@ img {
 }
 
 @media screen and (min-width: 1187px) {
+//hero
+	.hero__text > h3 {
+			font-size: 1.4rem;
+	}
 //advices
+	.advice__img {
+		height: 200px;
+		margin-bottom: 2.5rem;
+	}
 	.advices__tiles {
 		flex-direction: row;
 		max-width: 1300px;
@@ -577,12 +592,22 @@ img {
 		width: 40%;
 		height: 35rem;
 	}
+	#advices {
+		margin: 2rem auto;
+	}
+//steps
+	#steps {
+		margin: 2rem auto;
+	}
 //stats
 	.stats__tiles {
 		grid-template-columns: repeat(5, 1fr);
 	}
 	.stats__tile {
 		margin: auto 2rem;
+	}
+	.stats__h4 {
+		font-size: 1.2rem;
 	}
 }
 
@@ -592,7 +617,7 @@ img {
 		font-size: 4.7rem;
 	}
 	.title__h3 {
-		font-size: 2.4rem;
+		font-size: 2rem;
 		margin: 2rem auto 3rem auto;
 	}
 	//header
