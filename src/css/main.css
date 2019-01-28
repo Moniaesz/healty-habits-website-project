@@ -94,10 +94,10 @@ h1, h2, h3, h4, h5, p, li, button {
 
 .button {
   background: #0FBDA3;
-  padding: 1rem 2rem;
+  padding: 0.7rem 1rem;
   border: none;
   border-radius: 2rem;
-  width: 15rem;
+  width: 10rem;
   font-size: 1.3rem;
   cursor: pointer;
   transition: 0.3s ease; }
@@ -126,7 +126,10 @@ h1, h2, h3, h4, h5, p, li, button {
 
 .header__logo__img {
   margin-right: 1rem;
-  height: 5rem; }
+  height: 4rem; }
+
+.header__logo__name {
+  font-size: 1.5rem; }
 
 .nav {
   display: flex;
@@ -164,7 +167,7 @@ h1, h2, h3, h4, h5, p, li, button {
 
 .line {
   position: absolute;
-  height: 5px;
+  height: 3px;
   width: 100%;
   background: #fff;
   border-radius: 10px;
@@ -203,14 +206,14 @@ h1, h2, h3, h4, h5, p, li, button {
   background: #191741; }
 
 .title--hero {
-  padding-top: 2.5rem; }
+  padding-top: 1rem; }
 
 .hero__text > h3 {
   font-size: 1.1rem;
   font-weight: 300; }
 
 .hero__img {
-  height: 10rem;
+  height: 6rem;
   margin: 1.6rem auto auto 0.5rem; }
 
 .scroll__img {
@@ -449,6 +452,9 @@ h1, h2, h3, h4, h5, p, li, button {
     margin-top: 1.7rem; } }
 
 @media screen and (min-width: 931px) {
+  .button {
+    padding: 1rem 2rem;
+    width: 15rem; }
   .hero-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
