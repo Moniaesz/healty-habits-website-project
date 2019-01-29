@@ -4,13 +4,7 @@ RWD Project of website promoting balanced lifestyle.
 
 Desinged and prototyped in Adobe XD.
 
-![style guide](readme-img/style-guide.jpg)
-
-#### Desktop layout
-![prototype-desktop](readme-img/hh-desktop.jpg)
-
-#### Mobile layout
-![prototype-mobile](readme-img/hh-mobile.jpg)
+![style guide and layout](readme-img/hh-layout.jpg)
 
 Deployed with Netlify, live version can be seen at:
 
