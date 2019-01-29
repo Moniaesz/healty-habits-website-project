@@ -93,7 +93,7 @@ h1, h2, h3, h4, h5, p, li, button {
   color: white; }
 
 .button {
-  background: #0FBDA3;
+  background: #1ca08d;
   padding: 0.7rem 1rem;
   border: none;
   border-radius: 2rem;
@@ -195,7 +195,7 @@ h1, h2, h3, h4, h5, p, li, button {
   margin-left: 10px; }
 
 .menu.open .line {
-  background: #0FBDA3; }
+  background: #1ca08d; }
 
 /*
 * === hero section ===
@@ -247,7 +247,7 @@ h1, h2, h3, h4, h5, p, li, button {
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2); }
 
 .advice__tile__first {
-  background: #0FBDA3; }
+  background: #1ca08d; }
 
 .advice__tile__second {
   background: #E0DEFD; }
@@ -255,7 +255,7 @@ h1, h2, h3, h4, h5, p, li, button {
     color: #191741; }
 
 .advice__tile__third {
-  background: #6C63FF; }
+  background: #5a41fb; }
 
 .advice__title {
   margin: 1.3rem auto; }
@@ -310,7 +310,7 @@ h1, h2, h3, h4, h5, p, li, button {
   background-image: url("../assets/people/person3.jpg"); }
 
 .button--review {
-  background: #6C63FF;
+  background: #5a41fb;
   margin: 3rem auto; }
 
 /*
@@ -337,7 +337,7 @@ h1, h2, h3, h4, h5, p, li, button {
   font-weight: 300; }
   .steps_tile_text h4 {
     font-size: 1.7rem;
-    color: #0FBDA3;
+    color: #1ca08d;
     font-weight: 400; }
   .steps_tile_text p {
     margin: 1.5rem auto;
@@ -347,7 +347,7 @@ h1, h2, h3, h4, h5, p, li, button {
 * === stats section ===
 */
 #stats {
-  background: #6C63FF;
+  background: #5a41fb;
   padding: 0.5rem 2rem 3rem 2rem;
   display: flex;
   justify-content: center; }
@@ -421,7 +421,7 @@ h1, h2, h3, h4, h5, p, li, button {
   font-size: 1rem; }
 
 .small-footer a:link, .small-footer a:visited {
-  color: #0FBDA3;
+  color: #1ca08d;
   text-decoration: none; }
 
 .small-footer .created-by {
@@ -443,7 +443,6 @@ h1, h2, h3, h4, h5, p, li, button {
     padding: 2rem;
     margin-top: 2rem; }
   .nav__list {
-    background: rgba(25, 23, 65, 0.9);
     background: rgba(28, 117, 103, 0.95);
     flex-direction: column;
     position: absolute;

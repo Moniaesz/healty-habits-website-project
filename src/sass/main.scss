@@ -52,12 +52,12 @@ table {
 /*
 * === COLORS ===
 */
-$turqGreen: #0FBDA3;
+$turqGreen: #1ca08d;
 $darkBlue: #191741;
 $lightPink: #FBBBC4;
 $darkPink: #FC6681;
 $lightViolet: #E0DEFD;
-$darkViolet: #6C63FF;
+$darkViolet: #5a41fb;
 $darkestViolet: #342D9C;
 
 $boxShadow: 0px 3px 15px rgba(0,0,0,0.2);
@@ -491,7 +491,6 @@ h1, h2, h3, h4, h5, p, li, button {
 		margin-top: 2rem;
 	}
 	.nav__list {
-		background: rgba(25, 23, 65, 0.9);
 		background: rgba(28, 117, 103, 0.95);
 		flex-direction: column;
 		position: absolute;
