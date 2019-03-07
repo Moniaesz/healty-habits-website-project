@@ -122,6 +122,7 @@ h1, h2, h3, h4, h5, p, li, button {
 	font-size: 1.3rem;
 	cursor: pointer;
 	transition: 0.3s ease;
+	border: 3px solid transparent;
 	&:hover {
 		border: 3px solid white;
 		background: $darkPink;
@@ -629,10 +630,10 @@ h1, h2, h3, h4, h5, p, li, button {
 	}
 	//header
 	.header__logo__img {
-		height: 8rem;
+		height: 5.5rem;
 	}
 	.header__logo__name {
-		font-size: 2.7rem;
+		font-size: 2rem;
 		line-height: 3rem;
 	}
 	//hero

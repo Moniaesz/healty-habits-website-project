@@ -100,7 +100,8 @@ h1, h2, h3, h4, h5, p, li, button {
   width: 10rem;
   font-size: 1.3rem;
   cursor: pointer;
-  transition: 0.3s ease; }
+  transition: 0.3s ease;
+  border: 3px solid transparent; }
   .button:hover {
     border: 3px solid white;
     background: #FC6681; }
@@ -536,9 +537,9 @@ h1, h2, h3, h4, h5, p, li, button {
     font-size: 2rem;
     margin: 2rem auto 3rem auto; }
   .header__logo__img {
-    height: 8rem; }
+    height: 5.5rem; }
   .header__logo__name {
-    font-size: 2.7rem;
+    font-size: 2rem;
     line-height: 3rem; }
   #hero {
     padding-top: 15rem; } }
